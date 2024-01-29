@@ -1,0 +1,77 @@
+.card-acerca {
+    display: flex;
+    max-width: 50%;
+    margin-top: 5rem;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card-acerca img {
+    max-width: 120%;
+    border-radius: 1rem;
+}
+
+.header-acerca {
+    display: flex;
+    max-width: 60%;
+    margin: 05rem auto;
+    gap: 5rem;
+}
+
+.header-acerca h1 {
+    max-width: 70%;
+    font-family: 'rufina';
+    color: rgb(80, 80, 80);
+}
+
+.header-acerca p {
+    color: rgb(85, 85, 252);
+    font-family: 'source sans 3';
+}
+
+.text-acerca p {
+    font-family: 'source sans 3';
+    line-height: 30px;
+    color: rgb(105, 105, 105);
+}
+
+.text-acerca a {
+    color: rgb(85, 85, 252);
+    font-family: 'source sans 3';
+    border: 1px solid rgb(85, 85, 252);
+    padding: 0.3rem 2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.text-acerca h3 {
+    color: rgb(85, 85, 252);
+    font-family: 'rufina';
+    line-height: 40px;
+}
+
+@media(max-width: 768px) {
+    .header-acerca {
+        flex-direction: column;
+        max-width: 100%;
+        padding-left: 4rem;
+        gap: 0;
+    }
+
+    .header-acerca h1 {
+        margin: 0;
+        max-width: 80%;
+    }
+
+    .card-acerca {
+        flex-direction: column;
+        max-width: 80%;
+        gap: 2rem;
+    }
+
+    .card-acerca img {
+        max-width: 100%;
+    }
+}

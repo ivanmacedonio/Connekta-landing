@@ -1,0 +1,105 @@
+.text-profesionales {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'rufina';
+    align-items: center;
+}
+
+.text1 {
+    max-width: 20%;
+}
+
+.text1 h1 {
+    color: rgb(52, 52, 52);
+    font-size: 2.2rem;
+}
+
+.text2 {
+    max-width: 30%;
+}
+
+.text2 p {
+    font-family: 'source sans 3';
+    color: rgb(99, 99, 99);
+    line-height: 30px;
+}
+
+.card-profesionales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    max-width: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.paleta {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.paleta h3 {
+    font-family: 'rufina';
+    font-size:1.4rem;
+}
+
+.paleta p {
+    font-family: 'source sans 3';
+}
+
+.paleta>* {
+    max-width: 100%;
+    padding: 2rem;
+    color: white;
+}
+
+.paleta1 {
+    background-color: #0077b6;
+}
+
+.paleta2 {
+    background-color: #00b4d8;
+}
+
+.paleta3 {
+    background-color: #0077b6;
+}
+
+@media(min-width : 1200px) and (max-width: 1700px){
+    .text-profesionales {
+        gap: 10rem;
+    }
+}
+
+@media(max-width: 768px){
+    .text-profesionales {
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        padding-left: 3rem;
+    }
+    .text1, .text2{
+        max-width: 80%;
+    }
+    .text-profesionales h2{
+        font-size: 1rem;
+    }
+    .paleta{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-profesionales{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
